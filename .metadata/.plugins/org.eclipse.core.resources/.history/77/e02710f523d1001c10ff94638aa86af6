@@ -1,0 +1,29 @@
+package com.chainsys.threads;
+
+public class CurrentThreadDemo {
+	public static void main(String[] args) {
+		Thread t1 =Thread.currentThread();
+		try {
+			
+			System.out.println("mainThread Id:"+t1.getId());
+			Worker w= new Worker();
+			w.callme();
+			System.out.println("in main after callme");
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		Thread thread1=new Thread();
+		for(int i=0;i<10;i++) {
+			System.out.println("my program out:"+i);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		thread1.start();
+		t1.start();
+		
+	}
+
+}

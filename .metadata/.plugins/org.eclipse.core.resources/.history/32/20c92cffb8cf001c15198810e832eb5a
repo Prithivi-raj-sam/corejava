@@ -1,0 +1,14 @@
+package com.chainsys.oops;
+
+public class InterfaceSecondParty {
+
+	public ICalculator secondparty() {
+		int num = 10;
+		System.out.println("it is working!");
+		System.out.println(num);
+//		if (num == 10)
+			return (ICalculator) InterfaceReturn.inter2();
+
+	}
+
+}

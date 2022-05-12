@@ -1,0 +1,17 @@
+package com.chainsys.oops;
+
+public class InterfaceReturn {
+     public static ICalculator interfacereturns() {
+    	 int num=10;
+    	 System.out.println("it is working!");
+    	 System.out.println(num);
+//    	 int a=10;
+    	 InterfaceReturn i=new InterfaceReturn();
+    	 
+         return (ICalculator)i.inter2() ;
+     }
+     public static ICalculator inter2() {
+    	 System.out.println("working part 2!");
+    	 return ICalculator.;
+     }
+}

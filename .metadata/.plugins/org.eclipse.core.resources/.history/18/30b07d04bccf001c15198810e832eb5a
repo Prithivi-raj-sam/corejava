@@ -1,0 +1,12 @@
+package com.chainsys.oops;
+//import com.chainsys.oops.ICalculator;
+public class InterfaceReturn {
+     public ICalculator inter2() {
+    	 InterfaceSecondParty In = new InterfaceSecondParty();
+    	 System.out.println(In.name);
+    	 ICalculator c=In.secondparty();
+    	 System.out.println("working part 2!");
+    	 return c;
+     }
+}
+

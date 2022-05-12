@@ -1,0 +1,19 @@
+package com.chainsys.classandmethods;
+
+import com.chainsys.entrypoint.ABCbankhelper;
+/**
+ * 
+ * @author prit3136
+ *
+ */
+public class Startup {
+	/**
+	 * purpose portable executable entry point for the lessons
+	 * @param args type string 
+	 * @return void
+     */
+	public static void main(String[] args) {
+		ABCbankhelper.EmployeeInoget();
+     
+	}		
+}

@@ -1,9 +1,0 @@
-package com.chainsys.Arrays;
-import java.util.Date;
-public class homework {
-	public static void datetest() {
-		Date now =new Date();
-		System.out.println(now);
-	}
-
-}

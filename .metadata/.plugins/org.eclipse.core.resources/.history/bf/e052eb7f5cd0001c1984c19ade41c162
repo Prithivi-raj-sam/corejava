@@ -1,8 +1,0 @@
-package com.chainsys.Threads;
-
-public class testMyThreadClass {
-	public static void main(String[] args) {
-		
-	}
-
-}

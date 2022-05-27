@@ -12,10 +12,11 @@ package com.chainsys.garbage;
 			Calculator c3=new Calculator();
 
 			Runtime rt=Runtime.getRuntime();//factorymethod
-		     rt.gc();
+//		     rt.gc();
 		     c2=null;
 		     c3=null;
-		     rt.gc();
+//		     rt.gc();
+		     System.gc();
 //			System.in.read();
 		}
 	}

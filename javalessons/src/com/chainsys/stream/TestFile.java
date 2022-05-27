@@ -35,12 +35,13 @@ public class TestFile {
 //		fr.linenumbertest();
 //		fr.testdataIOStream();
 //		fr.testfilterSTream();
-		fr.pipeStream();
+//		fr.pipeStream();
 //		fr.pipeFileStream();
 //		fr.pipedWithoutThread();
 //		fr.TestbufferedInput();
 //		fr.Testbufferedoutput();
 //		fr.file();
+		fr.fileWriter();
 	}
 
 	public void Testread() {
@@ -441,6 +442,27 @@ public class TestFile {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	public void fileWriter() {
+		String fileName="test.log";
+		File fout=new File("D://LogManager//"+fileName+".txt");
+		FileWriter fw=null;
+		BufferedWriter buf=null;
+		String message="rersgypfofgoifwyt87yiriffr";
+		try {
+			fw=new FileWriter(fout);
+			buf = new BufferedWriter(fw);
+			buf.write(message);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				fw.close();
+			}catch(IOException e){
+				e.printStackTrace();
+			}
+		}
+		
 	}
 	
 	

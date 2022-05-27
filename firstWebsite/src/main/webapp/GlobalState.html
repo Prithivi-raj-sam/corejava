@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GlobalState</title>
+</head>
+<body>
+<form action ="/firstWebsite/GlobalState"   method="post">
+      
+       <div style ="width: 50%; margin: 0 auto"> 
+       <input type='text' value="5" name="commision" id="commision"/>
+       <!-- This element and its value is visible in the browser ,but
+       will not be transfer to the server because it is not part of (child element of) the <form> element-->
+       </div>
+       <div>
+      <label for='salary' >Salary:</label>
+      <input type=text name='salary' id='salary' value="2000"/>
+      </div>
+      <div style ="width: 50%; margin: 0 auto"> 
+       <input type="submit" value="set" name="submit"/>
+       </div>
+       <div style ="width: 50%; margin: 0 auto"> 
+       <input type='hidden' value='50000' name='bonus' id='bonus'/>
+       <!-- hidden value will be in the browser -->
+       </div>
+       <div style ="width: 50%; margin: 0 auto"> 
+       <input type="submit" value="fetch" name="submit"/>
+       <!-- input element is used to store data in client side and is visible in the browser -->
+       </div>
+       </div>
+       </form>
+ </body>
+</html>

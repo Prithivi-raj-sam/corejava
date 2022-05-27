@@ -12,5 +12,10 @@ public class homework {
 		point1.x=2;
 		System.out.println(point2);
 	}
+	public static void main(String[] args) {
+		String name="prithivi.com";
+		boolean check=name.endsWith(".com");
+		System.out.println(check);
+	}
 }
 

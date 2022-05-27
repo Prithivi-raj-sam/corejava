@@ -7,13 +7,13 @@ package com.chainsys.stream;
 
 	    public static void main(String args[]) throws Exception {
 	    java.util.Scanner scanner=new java.util.Scanner (System.in);
-	    String fname="";
-	    String source = "";
+	    String fname="D://LogManager//now.txt";
+	    String source = "tfgjjfdfhffhl";
 	    try {
-	    System.out.println("Enter FileName with full path"); 
-	    fname = scanner.nextLine();
-	    System.out.println("Enter Data");
-	    source = scanner.nextLine();
+//	    System.out.println("Enter FileName with full path"); 
+//	    fname = scanner.nextLine();
+//	    System.out.println("Enter Data");
+//	    source = scanner.nextLine();
 	   
 	    } finally {
 	    scanner.close();

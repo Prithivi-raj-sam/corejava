@@ -14,9 +14,9 @@ public class Workerthread extends Thread  {
 		  try{
 		   for(int i=0;i<5;i++)
 		   {
-			amount+=i;
+			amount=i+10;
 		    System.out.println(id+ "  " + amount);
-		    Thread.sleep(2000);
+		    Thread.sleep(1000);
 	       }
 		  }catch(Exception e)
 		  {

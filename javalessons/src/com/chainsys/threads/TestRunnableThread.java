@@ -3,10 +3,11 @@ package com.chainsys.threads;
 public class TestRunnableThread {
 	public static void main(String[] args) {
 //		runningMultipleRunnableThreads();
-		multiThreadsonjoin();
+//		multiThreadsonjoin();
 //		exitingMultiThreads();
 //		workingThreadPriority();
 //		checkingStateofThreads();
+		test18();
 	}
 	public static void runningMultipleRunnableThreads()
 	{
@@ -37,9 +38,10 @@ catch(Exception e)
 			RunnableWorker firstWorker=new RunnableWorker();
 			Thread t1=new Thread(firstWorker);
 			Thread t2=new Thread(firstWorker);
+//			Thread t3=new Thread(firstWorker);
 			t1.start();//call run
-			t2.start();// call run		
-			t1.join();
+			t2.start();// call run
+//			t1.join();
 			t2.join();
 			System.out.println("From Main--END!!!");
 		 }catch(Exception e)
@@ -127,6 +129,20 @@ catch(Exception e)
 		System.out.println("T1 State "+t1.getState());
 		System.out.println("T2 State "+t2.getState());
 }
-
+ public static void test18() {
+	 RunnableWorker obj=new RunnableWorker();
+		Thread t1=new Thread(obj);
+		Workerthread obj2=new Workerthread();
+		Thread t2=new Thread(obj2);
+		t1.start();
+		try {
+			t1.join();
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		t2.start();
+		
+ }
 
 }

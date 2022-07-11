@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Js</title>
+</head>
+<body>
+        <p id="result">somthing</p>
+		<label for="input">input:</label> <input type="text" id="input" >
+		<input type="submit" onclick='say()'>
+		<div>
+		<label for="text">text:</label><input type="text" id="text" OnkeyUp="say1()">
+		</div>
+	<br>
+	<p>summa</p>
+	<script>
+		function say() {
+			const name = document.getElementById('input').value;
+			console.log(name);
+			//document.writeln(`Entered Name : ${name}`);
+			document.getElementById('result').innerHTML=`Entered Name : ${name}`;
+		}
+		function say1() {
+			const name = document.getElementById('text').value;
+			document.getElementById('result').innerHTML =`Entered Name : ${name}`;
+		}
+		var number = 12;
+		var octal = 0377;
+		console.log(number);
+		document.writeln(`value of number : ${number}`);
+		document.writeln(`value of octal : ${octal}`);
+	</script>
+
+</body>
+</html>

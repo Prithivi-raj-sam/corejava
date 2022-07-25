@@ -1,4 +1,4 @@
-package scom.chainsys.oop;
+package com.chainsys.oops;
 
 	public interface ICalculator 
 	{

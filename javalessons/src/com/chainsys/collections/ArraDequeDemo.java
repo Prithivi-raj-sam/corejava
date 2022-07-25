@@ -3,8 +3,6 @@ import java.util.ArrayDeque;
 import java.util.Iterator;
 public class ArraDequeDemo {
 	public static void main(String[] args) {
-        
-
         ArrayDeque<String> arraydeque =new ArrayDeque<String>();
         //Use an ArrayDeque like a Stack
         arraydeque.push("A");

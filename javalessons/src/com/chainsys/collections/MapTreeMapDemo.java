@@ -14,6 +14,7 @@ public class MapTreeMapDemo {
 		tm.put("Tod Hall", 99.22);
 		tm.put("Ralph Smith", -19.08);
 		Set<Map.Entry<String, Double>> set = tm.entrySet();
+		//Set<Map.Entry<key, value>> set = tm.entrySet();
 		Iterator<Map.Entry<String, Double>> i = set.iterator();
 		while (i.hasNext()) {
 			Map.Entry<String, Double> me = i.next();

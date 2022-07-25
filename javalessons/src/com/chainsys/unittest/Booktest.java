@@ -12,7 +12,5 @@ public class Booktest {
     	System.out.println(bookobject.getPrice());
     	System.out.println(bookobject.getBookSerialNo());
     }
-    public static void print() {
-    	System.out.println(author);
-    }
+   
 }

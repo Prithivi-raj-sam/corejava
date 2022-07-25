@@ -6,7 +6,6 @@ import java.util.Iterator;
 public class SetHashSetDemo {
 	public static void main(String args[]) {
 		demoA();
-//	     demoB();
 	}
 	public static void demoA() {
 		HashSet<String> String_hs = new HashSet<String>();

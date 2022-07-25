@@ -1,5 +1,5 @@
 package com.chainsys.stream;
-FilterInputStream
+
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

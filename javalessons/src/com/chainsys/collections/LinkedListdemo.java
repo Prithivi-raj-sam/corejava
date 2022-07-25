@@ -14,10 +14,13 @@ public class LinkedListdemo {
 		stringLinkedList.add("D");
 		stringLinkedList.add("E");
 		stringLinkedList.add("C");
-//		stringLinkedList.addLast("Z");
-//		stringLinkedList.addFirst("A");
-//		stringLinkedList.add(1,"A2");
+		stringLinkedList.addLast("Z");
+		stringLinkedList.addFirst("A");
+		stringLinkedList.add(1,"A2");
 		stringLinkedList.add(5,"A2");
+		stringLinkedList.addFirst("wf");
+		stringLinkedList.addLast("paale");
+		System.out.println(stringLinkedList.poll());
 		Iterator<String> String_itr= stringLinkedList.iterator();
 		 while (String_itr.hasNext()) {
 			 System.out.print(String_itr.next()+" ");

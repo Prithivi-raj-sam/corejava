@@ -3,6 +3,7 @@ import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionBindingListener;
 public class User implements HttpSessionBindingListener{
 	private String userId;
+	private String passward;
 	public String getUserId() {
 		return userId;
 	}
@@ -15,7 +16,7 @@ public class User implements HttpSessionBindingListener{
 	public void setPassward(String passward) {
 		this.passward = passward;
 	}
-	private String passward;
+	
 	@Override
 	public void valueBound(HttpSessionBindingEvent arg0) {
 		System.out.println("Value Bound: "+arg0.getName());

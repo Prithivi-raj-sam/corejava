@@ -21,7 +21,6 @@ public class CookiesDemo extends HttpServlet {
      */
     public CookiesDemo() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**

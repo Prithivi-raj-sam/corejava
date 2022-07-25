@@ -35,7 +35,7 @@ public class Employees extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	public String id;
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
@@ -82,7 +82,7 @@ public class Employees extends HttpServlet {
 			Employee emp = new Employee();
 			try {
 
-				 id = request.getParameter("id");
+				String id = request.getParameter("id");
 				try {
 					Validator.checkStringForParseInt(id);
 				} catch (InvalidInputDataException e) {
@@ -194,8 +194,7 @@ public class Employees extends HttpServlet {
 			doPut(request,response);
 		}else if(request.getParameter("submit").equals("Delete")) {
 			doDelete(request,response);
-		}else if(request.getParameter("submit").equals("Fetch"))
-			out.print("answer:"+id);
+		}
 	}
 
 	protected void doPut(HttpServletRequest request, HttpServletResponse response)

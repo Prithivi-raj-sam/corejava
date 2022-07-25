@@ -26,16 +26,6 @@ public class SigninServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		RequestDispatcher rd=request.getRequestDispatcher("UserServlet");
-		rd.forward(request, response);
-		
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */   
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session =request.getSession();
 		String id =session.getId();
 		System.out.println("id : "+id);
@@ -45,13 +35,30 @@ public class SigninServlet extends HttpServlet {
 			// the session terminated. 
 			return;
 		}
-		String url= "UserServlet";
-		String encodedUrl= response.encodeURL(url);
+		RequestDispatcher rd=request.getRequestDispatcher("UserServlet");
+		rd.forward(request, response);
+//		response.sendRedirect("UserServlet");
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */   
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		HttpSession session =request.getSession();
+//		String id =session.getId();
+//		System.out.println("id : "+id);
+//		String option = request.getParameter("submit");
+//		if(option.equals("logoff")){
+//			session.invalidate();
+//			// the session terminated. 
+//			return;
+//		}
 		// response.encodeUrl will append session id to the url
 //		System.out.println(encodedUrl);
 		
 //		doGet(request,response);
-		response.sendRedirect("UserServlet");
+//		response.sendRedirect("UserServlet");
 	}
 
 }
